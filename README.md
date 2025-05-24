@@ -21,7 +21,7 @@ This FastAPI application allows you to:
 
 1. Start the FastAPI application:
    ```
-   uvicorn main:app --reload
+   uv uvicorn main:app --reload
    ```
 
 2. Access the API documentation at [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs).
@@ -43,21 +43,6 @@ This FastAPI application allows you to:
   ```
 
 - Download the MP3 file from the provided `download_url`.
-
-#### (Optional) Get Captions
-
-If you add a `/captions` endpoint, you can use:
-
-- **GET** `/captions?url=https://www.youtube.com/watch?v=VIDEO_ID`
-
-  Returns a JSON with the transcribed captions.
-
-  **Example response:**
-  ```json
-  {
-    "captions": "Transcribed text from the video's subtitles..."
-  }
-  ```
 
 ## Notes
 
