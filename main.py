@@ -20,6 +20,7 @@ def descargar_mp3(url: str = Query(..., description="URL del video de YouTube"))
         "outtmpl": output_template,
         "quiet": True,
         "noplaylist": True,
+        "cookiefile": "cookies.txt",
         "postprocessors": [
             {
                 "key": "FFmpegExtractAudio",
