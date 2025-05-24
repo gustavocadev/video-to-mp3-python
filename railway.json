@@ -1,8 +1,7 @@
 {
   "build": {
-    "command": "./build.sh"
-  },
-  "start": {
-    "command": "python main.py"
+    "nixpacks": {
+      "packages": ["ffmpeg", "python3"]
+    }
   }
 }
